@@ -1,0 +1,297 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font: 16px/26px Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: #ECECEA;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+.banner {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url("img/achtergrond.jpg");
+    height: 200px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+.logo {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 7rem;
+    padding-left: 10px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #e4f3f8;
+    font-size: 1rem;
+}
+
+footer h3:first-child {
+    float: left;
+}
+
+footer h3:nth-child(2) {
+    float: right;
+}
+
+footer h3:last-child {
+    text-align: center;
+}
+
+footer a:hover {
+    color: #D9853B;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav hr {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #e4f3f8;
+}
+
+nav a:hover {
+    color: #D9853B;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #D9853B;
+}
+
+.main aside {
+    color: white;
+    padding: 0 5% 30px;
+    background-color: #FFF;
+}
+
+.footer-container footer {
+    color: #e4f3f8;
+    padding: 10px 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: #222;
+    float: left;
+    clear: both;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside h3 {
+    font-size: 1.1rem;
+    clear: both;
+    padding-top: 20px;
+    color: #D9853B;
+}
+
+.header-container,
+.footer-container {
+    background: #0a111f;
+}
+
+section {
+    background: #FFF;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+    .banner {
+        height: 300px;
+    }
+
+    .logo {
+        height: 150px;
+        padding-top: 5rem;
+    }
+
+    /* ====================
+        INTERMEDIATE: Menu
+       ==================== */
+    nav hr {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    nav li {
+        float: left;
+        padding-right: 20px;
+    }
+
+    nav a {
+        float: left;
+        width: 30%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        font-size: 0.8rem;
+        background: none;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+    /* ========================
+        INTERMEDIATE: IE Fixes
+       ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    /* ====================
+        WIDE: CSS3 Effects
+       ==================== */
+
+    .header-container {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
+    }
+
+    /* ============
+        WIDE: Menu
+       ============ */
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    /* ============
+        WIDE: Main
+       ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+    /* ===============
+        Maximal Width
+       =============== */
+
+    .wrapper {
+        width: 1026px;
+        margin: 0 auto;
+    }
+}
